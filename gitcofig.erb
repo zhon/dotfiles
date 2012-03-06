@@ -1,0 +1,25 @@
+[user]
+	name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
+	email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+[alias]
+	co = checkout
+  outgoing = log @{u}..
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+  interactive = auto
+[core]
+	excludesfile = <%= ENV['HOME'] %>/.gitignore
+	editor = vim
+  #editor = \"c:/Program Files (x86)/Vim/vim73/gvim.exe\" --nofork
+	autocrlf = input
+[apply]
+	whitespace = nowarn
+[format]
+	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[init]
+  templatedir = '~/.git_template'
+[github]
+	user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
+	token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>

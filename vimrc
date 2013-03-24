@@ -35,10 +35,7 @@ map <F2> :NERDTreeToggle<CR>
 " Set lines to the curors - when moving vertical..
 set so=4
 
-set wildmenu "Turn on WiLd menu
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif
-
-set ruler "Always show current position
 
 set cmdheight=2 "The commandbar height
 
@@ -53,24 +50,13 @@ set smartcase "Use case if typing in uppercase
 
 set hlsearch "Highlight search things
 
-set incsearch "Make search act like search in modern browsers
-
 set magic "Set magic on, for regular expressions
 
-set showmatch "Show matching bracets when text indicator is over them
 set mat=2 "How many tenths of a second to blink
 
 " No sound or flash on errors (also set in gvimrc)
 set noerrorbells
 set vb t_vb=
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Files and backups
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Don't create backupfiles everywhere, but just in ~/.backup
-set backupcopy=yes
-set backupdir=~/.backup
-set dir=~/.backup
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -79,13 +65,11 @@ set dir=~/.backup
 set expandtab
 set shiftwidth=2
 set tabstop=2
-set smarttab
 set nojoinspaces
 
 set lbr
 set tw=500
 
-set autoindent
 set wrap "Wrap lines
 "set si "Smart indet
 
@@ -148,11 +132,6 @@ catch
 endtry
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Statusline
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set laststatus=2
-
 " Format the statusline
 "set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 
@@ -164,20 +143,13 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
-
 
 set cf  " Enable error files & error jumping.
 set clipboard+=unnamed  " Yanks go on clipboard instead.
-set history=256  " Number of things to remember in history.
 set autowrite  " Writes on make/shell commands
 " set nu  " Line numbers on
 " Time to wait after ESC (default causes an annoying delay)
-set timeout timeoutlen=1000 ttimeoutlen=100
-
-
-set showcmd		" display incomplete commands
+set timeout timeoutlen=1000
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 let &guioptions = substitute(&guioptions, "t", "", "g")

@@ -1,0 +1,31 @@
+---
+digitaltoad:
+  - vim-jade
+godlygeek:
+  - tabular
+groenewege:
+  - vim-less
+kchmck:
+  - vim-coffee-script
+msanders:
+  - snipmate.vim
+pangloss:
+  - vim-javascript
+tpope:
+  - vim-abolish
+  - vim-cucumber
+  - vim-endwise
+  - vim-fugitive
+  - vim-git
+  - vim-haml
+  - vim-markdown
+  - vim-pathogen
+  - vim-rails
+  - vim-repeat
+  - vim-sensible
+  - vim-surround
+  - vim-unimpaired
+  - vim-vividchalk
+scrooloose:
+  - nerdtree
+  - nerdcommenter

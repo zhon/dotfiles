@@ -30,6 +30,9 @@ autocmd! bufwritepost ~/_vimrc source ~/_vimrc
 
 map <F2> :NERDTreeToggle<CR>
 
+" disable formatting when pasting large chunks of code
+set pastetoggle=<F3>
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
